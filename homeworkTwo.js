@@ -7,16 +7,16 @@ let maxVal = arrOne[0];
 
 //Вызываем цикл forEach для перебора и сравнения элементов массива
 arrOne.forEach((e) => {
-    if (e > minVal) {
+    if (e < minVal) {
         minVal = e;
     }
-    if (e < maxVal) {
+    if (e > maxVal) {
         maxVal = e;
     }
 })
 
 //Выводим результат
-console.log(`Индекс минимального элемента (${minVal}): ${arrOne.indexOf(minVal)}, индекс максимально элемента (${maxVal}): ${arrOne.indexOf(maxVal)}`)
+console.log(`Индекс минимального элемента (${minVal}): ${arrOne.indexOf(minVal)}, индекс максимального элемента (${maxVal}): ${arrOne.indexOf(maxVal)}`)
 
 
 //--------------------------//
